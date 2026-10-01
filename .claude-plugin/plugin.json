@@ -1,8 +1,8 @@
 {
   "name": "cucaracha-reply-automation",
-  "displayName": "Cucaracha: X Reply Automation",
-  "version": "1.1.0",
-  "description": "Automate X replies from Claude. Cucaracha watches the accounts you choose, finds relevant tweets, writes replies in your voice, and posts automatically or waits for your approval.",
+  "displayName": "Cucaracha: Automated Replies",
+  "version": "1.2.0",
+  "description": "Automate replies on X and LinkedIn.",
   "author": {
     "name": "Cucaracha",
     "url": "https://cucaracha.ai"

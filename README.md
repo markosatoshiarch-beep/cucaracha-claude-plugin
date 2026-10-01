@@ -1,6 +1,6 @@
-# Cucaracha: X Reply Automation for Claude
+# Cucaracha: Automated Replies
 
-Cucaracha watches the X accounts you choose, finds relevant new tweets, writes replies in your voice, and either posts them automatically or lets you approve them first.
+Cucaracha automates replies on X and LinkedIn.
 
 The Claude plugin lets you check and control that automation from a conversation: review what Cucaracha found, generate a reply, inspect your setup, and change supported targets and settings.
 

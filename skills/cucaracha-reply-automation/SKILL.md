@@ -1,6 +1,6 @@
 ---
 name: cucaracha-reply-automation
-description: Automate X replies with Cucaracha. Use when the user wants Cucaracha to watch selected accounts, find relevant tweets, write replies in their voice, post automatically or queue replies for approval, review found tweets, or change supported targets and settings.
+description: Automate replies on X and LinkedIn with Cucaracha. Use when the user wants to find relevant posts, write replies in their voice, review replies, or manage supported targets and settings.
 ---
 
 # Cucaracha social reply automation
