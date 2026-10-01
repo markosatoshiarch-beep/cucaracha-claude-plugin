@@ -4,6 +4,10 @@ Cucaracha automates replies on X and LinkedIn.
 
 The Claude plugin lets you check and control that automation from a conversation: review what Cucaracha found, generate a reply, inspect your setup, and change supported targets and settings.
 
+## Current status
+
+The plugin bundle is built, publicly available, and passes Claude's official local validator. The remote Cucaracha MCP endpoint is configured, but public Claude account connection is not live yet: Cucaracha still needs Claude-compatible per-user OAuth. Existing personal MCP keys must not be committed to this repository or shared with Marketplace users.
+
 ## How it works
 
 1. Pick the X accounts or lists you want to engage with.
@@ -25,7 +29,7 @@ Reading the queue does not itself run or refresh discovery; Cucaracha's backgrou
 
 ## Install and connect
 
-After adding the plugin in Claude, open its **Connectors** tab and connect Cucaracha. Authentication is handled by the hosted Cucaracha service. Do not put API keys or access tokens into the plugin files.
+After Cucaracha's OAuth flow is implemented and the plugin and connector are approved in Claude Directory, add the plugin in Claude, open its **Connectors** tab, and connect Cucaracha. Authentication will be handled by the hosted Cucaracha service. Do not put API keys or access tokens into the plugin files.
 
 Example requests:
 
