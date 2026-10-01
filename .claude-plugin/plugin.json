@@ -1,8 +1,8 @@
 {
-  "name": "cucaracha-social-replies",
-  "displayName": "Cucaracha",
-  "version": "1.0.0",
-  "description": "Review your Cucaracha X or LinkedIn queue, create contextual reply drafts, and safely manage reply settings from Claude.",
+  "name": "cucaracha-reply-automation",
+  "displayName": "Cucaracha: X Reply Automation",
+  "version": "1.1.0",
+  "description": "Automate X replies from Claude. Cucaracha watches the accounts you choose, finds relevant tweets, writes replies in your voice, and posts automatically or waits for your approval.",
   "author": {
     "name": "Cucaracha",
     "url": "https://cucaracha.ai"
