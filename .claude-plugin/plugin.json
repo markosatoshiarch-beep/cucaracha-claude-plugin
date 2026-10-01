@@ -1,0 +1,11 @@
+{
+  "name": "cucaracha-social-replies",
+  "displayName": "Cucaracha",
+  "version": "1.0.0",
+  "description": "Review your Cucaracha X or LinkedIn queue, create contextual reply drafts, and safely manage reply settings from Claude.",
+  "author": {
+    "name": "Cucaracha",
+    "url": "https://cucaracha.ai"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cucaracha": {
+      "type": "http",
+      "url": "https://cucaracha.ai/api/mcp"
+    }
+  }
+}
