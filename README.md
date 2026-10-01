@@ -10,22 +10,23 @@ The plugin bundle is built, publicly available, and passes Claude's official loc
 
 ## How it works
 
-1. Pick the X accounts or lists you want to engage with.
+1. Choose X accounts or lists, or configure LinkedIn topics and author filters.
 2. Tell Cucaracha how your replies should sound.
-3. Cucaracha checks for new tweets, skips poor fits, and writes relevant replies.
-4. Approve replies yourself or let Cucaracha post them automatically, within your daily limit.
+3. Cucaracha finds relevant posts, skips poor fits, and writes replies in your voice.
+4. Review generated replies or use the supported X automation configured in your Cucaracha account.
 
 ## What you can ask Claude
 
 - “What relevant tweets did Cucaracha find?”
 - “Write a reply to the best one in my voice.”
 - “Which accounts and lists am I monitoring?”
+- “Show the newest LinkedIn posts in my queue and draft a reply to the best one.”
 - “Show my current reply prompt, cadence, and daily limit.”
 - “Change this setting after I approve the update.”
 
 ## Important limitations
 
-Reading the queue does not itself run or refresh discovery; Cucaracha's background automation performs monitoring according to the account's configuration. A reply-generation result is not proof of publication. Claude must report a reply as published only when a dedicated connector result explicitly confirms publication. The connector cannot connect or disconnect social accounts, authorize credentials, or expose tokens and private account data.
+Reading the queue does not itself run or refresh discovery; Cucaracha's background automation performs monitoring according to the account's configuration. A reply-generation result is not proof of publication. Claude must report a reply as published only when a dedicated connector result explicitly confirms publication. The connector can read the authenticated user's supported workflow settings, but it cannot connect or disconnect social accounts, authorize credentials, or expose account credentials, OAuth tokens, or connection secrets.
 
 ## Install and connect
 

@@ -5,17 +5,17 @@ description: Automate replies on X and LinkedIn with Cucaracha. Use when the use
 
 # Cucaracha social reply automation
 
-Cucaracha watches the X accounts or lists a user chooses, finds relevant new tweets, writes replies in the user's voice, and either posts them automatically or queues them for approval. The user controls the reply instructions, monitoring cadence, and daily limit.
+Cucaracha automates relevant replies across X and LinkedIn. For X, it can watch selected accounts or lists, find suitable new tweets, write replies in the user's voice, and run the configured review or automatic workflow. For LinkedIn, it can use configured search topics and author filters to populate an actionable queue and generate reply drafts for review.
 
 Use the Cucaracha connector to help an authenticated user operate and review this automation: inspect queues and settings, generate contextual replies, and safely manage the targeting, persona, filters, cadence, and other settings actually exposed by the connector.
 
 ## Product model
 
-- **Targets:** the X accounts or lists Cucaracha watches.
-- **Discovery:** Cucaracha checks those sources in the background on the configured cadence.
+- **Targets:** X accounts or lists, and LinkedIn search topics or author filters, depending on the provider.
+- **Discovery:** Cucaracha checks configured sources in the background according to provider settings.
 - **Selection:** unsuitable tweets are skipped rather than forcing a reply.
 - **Generation:** replies are written from the user's prompt and persona.
-- **Execution:** the account runs in its configured Human-in-the-loop or automatic workflow, subject to its daily limit.
+- **Execution:** X may run in a configured Human-in-the-loop or automatic workflow. Treat LinkedIn generation as a draft-for-review workflow unless a dedicated publishing tool is actually available and confirms publication.
 - **Claude's role:** provide a conversational control and review layer over the existing Cucaracha account; do not pretend that one MCP read call performs the entire background loop.
 
 ## Ground rules
@@ -24,7 +24,7 @@ Use the Cucaracha connector to help an authenticated user operate and review thi
 - Never claim that reading the queue refreshes discovery. `get_queue` only returns existing actionable items.
 - Never describe a generated reply as observed text, approved text, or a published comment. The currently exposed `generate_reply` operation creates and saves a reply draft for one existing queue item.
 - Do not claim the connector can connect, disconnect, authorize, or edit account credentials.
-- Do not expose tokens, connection details, account identifiers, or private configuration.
+- Do not expose credentials, OAuth tokens, connection secrets, or unrelated settings. Return only the safe workflow fields needed for the user's request.
 - Never change the operating mode, increase posting frequency, raise limits, change monitored accounts or lists, change discovery filters, or make another consequential settings change without showing the proposed change and receiving explicit approval.
 - Prefer Human-in-the-loop when the user has not explicitly requested automatic posting.
 - A dedicated publishing capability may be available in some Cucaracha MCP configurations. Use it only when it is actually present in the connector, the user explicitly requests publication, and the tool result confirms success. Never infer publication from reply generation.
